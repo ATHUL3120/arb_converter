@@ -1,0 +1,7 @@
+
+default_loc: "assets/en.arb"
+default_lang: "en"
+output: "assets/"
+languages:
+  hi: intl_hi
+  ml: intl_ml
