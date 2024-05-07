@@ -1,39 +1,40 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# ARB Converter
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+[![pub package](https://img.shields.io/pub/v/like_button.svg)](https://pub.dartlang.org/packages/like_button) [![GitHub license](https://img.shields.io/github/license/fluttercandies/like_button)](https://github.com/fluttercandies/like_button/blob/master/LICENSE)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package can used for crate multiple language arb file easily.
 
-## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use GradientElevatedButton, add it to your dependencies in `pubspec.yaml`:
+```yaml
+dependencies :
+  arb_converter : ^0.0.1
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+- crate arb_converter.yaml with
+ ```yaml
+default_loc: "assets/en.arb"
+default_lang: "en"
+output: "assets/"
+languages:
+  hi: intl_hi
+  ml: intl_ml
+ ```
+- set the default arb file and run th following command
 
-```dart
-const like = 'sample';
-```
+```dart    
+ dart run arb_converter
+```  
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Issues and feedback
+
+Please file issues and feedback using the Github issues page for this repository.
+
+If you have any suggestions or feedback, please send an email to __chegz.dev@gmail.com__ and we'll be happy to hear from you!
